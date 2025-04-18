@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a **cloud-native, microservices-based demo application** for Best Buy, inspired by the **Algonquin Pet Store (On Steroids)** architecture with a key enhancement — replacing the RabbitMQ service with a **managed order queue** like **Azure Service Bus**.
+This project is a **cloud-native, microservices-based demo application** for Best Buy, inspired by the Algonquin Pet Store architecture with a key enhancement — replacing the RabbitMQ service with a **managed order queue** like **Azure Service Bus**.
 
 As a Full-Stack Cloud-Native Developer at Best Buy, I designed, developed, and deployed this application on a **Kubernetes cluster**, integrating **AI-powered product descriptions and images** using **GPT-4** and **DALL·E**.
 
