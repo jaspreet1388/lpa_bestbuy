@@ -62,12 +62,12 @@ All deployment manifests are located in the [`Deployment Files`](./Deployment%20
 
 | Service         | Repository Link                         |
 |----------------|------------------------------------------|
-| Store-Front     | [GitHub Link](https://github.com/your-username/store-front)       |
-| Store-Admin     | [GitHub Link](https://github.com/your-username/store-admin)       |
-| Order-Service   | [GitHub Link](https://github.com/your-username/order-service)     |
-| Product-Service | [GitHub Link](https://github.com/your-username/product-service)   |
-| Makeline-Service| [GitHub Link](https://github.com/your-username/makeline-service)  |
-| AI-Service      | [GitHub Link](https://github.com/your-username/ai-service)        |
+| Store-Front     | [GitHub Link](https://github.com/jaspreet1388/lpa-store-front.git)       |
+| Store-Admin     | [GitHub Link](https://github.com/jaspreet1388/lpa-store-admin.git)       |
+| Order-Service   | [GitHub Link](https://github.com/jaspreet1388/lpa-order-service.git)     |
+| Product-Service | [GitHub Link](https://github.com/jaspreet1388/lpa-product-service.git)   |
+| Makeline-Service| [GitHub Link](https://github.com/jaspreet1388/lpa-makeline-service.git)  |
+| AI-Service      | [GitHub Link](https://github.com/jaspreet1388/lpa-ai-service.git)        |
 
 ---
 
