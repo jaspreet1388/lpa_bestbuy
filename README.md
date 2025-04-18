@@ -82,18 +82,75 @@ All deployment manifests are located in the [`Deployment Files`](./Deployment%20
 | Makeline-Service| [Docker Hub](https://hub.docker.com/r/yourname/makeline-service)|
 | AI-Service      | [Docker Hub](https://hub.docker.com/r/yourname/ai-service)      |
 
+
+---
+Connecting Order-Service to Azure Service Bus
+az group create --name bestbuy --location canadacentral
+
+az servicebus namespace create \
+  --name bestbuyapp \
+  --resource-group bestbuy
+
+az servicebus queue create \
+  --name orders \
+  --namespace-name bestbuyapp \
+  --resource-group bestbuy
+
+ **Step 2: Set Up Authentication**
+Option A: Using Managed Identity (Recommended)
+SERVICEBUSBID=$(az servicebus namespace show \
+  --name bestbuyapp \
+  --resource-group bestbuy \
+  --query id -o tsv)
+
+az role assignment create \
+  --assignee chha0038@algonquinlive.com \
+  --role "Azure Service Bus Data Sender" \
+  --scope $SERVICEBUSBID
+
+**Step 3: Save Environment Variables**
+Ensure you are inside the order-service directory.
+
+HOSTNAME=$(az servicebus namespace show \
+  --name bestbuyapp \
+  --resource-group bestbuy \
+  --query serviceBusEndpoint -o tsv | sed 's/https:\/\///;s/:443\///')
+
+cat << EOF > .env
+USE_WORKLOAD_IDENTITY_AUTH=true
+AZURE_SERVICEBUS_FULLYQUALIFIEDNAMESPACE=$HOSTNAME
+ORDER_QUEUE_NAME=orders
+EOF
+
+source .env
+
+**Step 3: Save Environment Variables**
+Ensure you are inside the order-service directory.
+
+HOSTNAME=$(az servicebus namespace show \
+  --name bestbuyapp \
+  --resource-group bestbuy \
+  --query serviceBusEndpoint -o tsv | sed 's/https:\/\///;s/:443\///')
+
+cat << EOF > .env
+USE_WORKLOAD_IDENTITY_AUTH=true
+AZURE_SERVICEBUS_FULLYQUALIFIEDNAMESPACE=$HOSTNAME
+ORDER_QUEUE_NAME=orders
+EOF
+
+source .env
+
 ---
 
 ## Demo Video
 
 Watch the complete walkthrough of the application showcasing:
 
-✅ Working Store Front  
-✅ AI-generated Descriptions and Images  
-✅ Integration with Azure Service Bus  
-✅ Admin Management Console
+Working Store Front  
+AI-generated Descriptions and Images   
+Admin Management Console
 
-🔗 [Watch Demo on YouTube](https://www.youtube.com/watch?v=your-demo-link)
+
 
 ---
 
