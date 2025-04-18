@@ -15,7 +15,7 @@ This architecture closely follows the Algonquin Pet Store pattern, with modifica
 ![image](https://github.com/user-attachments/assets/24e465c9-0cad-4666-9108-0142e845f81e)
 
 
-> ✅ *Note: Replace the above link with your actual Draw.io exported image.*
+
 
 ---
 
