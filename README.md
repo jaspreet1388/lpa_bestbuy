@@ -12,7 +12,8 @@ As a Full-Stack Cloud-Native Developer at Best Buy, I designed, developed, and d
 
 This architecture closely follows the Algonquin Pet Store pattern, with modifications to use managed cloud services for scalability and maintenance.
 
-![Best Buy Architecture Diagram](./architecture-diagram.png)
+![image](https://github.com/user-attachments/assets/24e465c9-0cad-4666-9108-0142e845f81e)
+
 
 > ✅ *Note: Replace the above link with your actual Draw.io exported image.*
 
