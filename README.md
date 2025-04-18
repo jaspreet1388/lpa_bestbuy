@@ -54,7 +54,7 @@ The entire application is containerized and deployed using Kubernetes:
 - **Deployments** for stateless services
 - **Service Accounts + RBAC** for secure access
 
-All deployment manifests are located in the [`Deployment Files`](./Deployment%20Files) folder.
+All deployment manifests are located in the deployment folder.
 
 ---
 
