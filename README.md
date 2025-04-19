@@ -143,12 +143,11 @@ source .env
 ---
 
 ## Demo Video
+Collaborator : Akshay Malik
 
-Watch the complete walkthrough of the application showcasing:
 
-Working Store Front  
-AI-generated Descriptions and Images   
-Admin Management Console
+
+
 
 
 
