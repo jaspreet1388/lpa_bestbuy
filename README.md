@@ -75,12 +75,12 @@ All deployment manifests are located in the deployment folder.
 
 | Service         | Docker Image Link                                      |
 |----------------|--------------------------------------------------------|
-| Store-Front     | [Docker Hub](https://hub.docker.com/r/yourname/store-front)     |
-| Store-Admin     | [Docker Hub](https://hub.docker.com/r/yourname/store-admin)     |
-| Order-Service   | [Docker Hub](https://hub.docker.com/r/yourname/order-service)   |
-| Product-Service | [Docker Hub](https://hub.docker.com/r/yourname/product-service) |
-| Makeline-Service| [Docker Hub](https://hub.docker.com/r/yourname/makeline-service)|
-| AI-Service      | [Docker Hub](https://hub.docker.com/r/yourname/ai-service)      |
+| Store-Front     | [Docker Hub](https://hub.docker.com/repository/docker/jaspreet1388/lpa-store-front)     |
+| Store-Admin     | [Docker Hub](https://hub.docker.com/repository/docker/jaspreet1388/lpa-store-admin)     |
+| Order-Service   | [Docker Hub](https://hub.docker.com/repository/docker/jaspreet1388/lpa-order-service)   |
+| Product-Service | [Docker Hub](https://hub.docker.com/repository/docker/jaspreet1388/lpa-product-service) |
+| Makeline-Service| [Docker Hub](https://hub.docker.com/repository/docker/jaspreet1388/lpa-makeline-service)|
+| AI-Service      | [Docker Hub](https://hub.docker.com/repository/docker/jaspreet1388/lpa-ai-service)      |
 
 
 ---
@@ -154,11 +154,3 @@ Admin Management Console
 
 ---
 
-## Deployment Instructions
-
-1. **Clone the repositories**
-
-   ```bash
-   git clone https://github.com/your-username/store-front.git
-   git clone https://github.com/your-username/store-admin.git
-   ...
